@@ -19,6 +19,7 @@ This project focuses on:
 ---
 
 ## 🧠 High-Level Architecture
+```
               ┌────────────────────────┐
               │   Traffic Generator     │
               │  (Attack Simulation)    │
@@ -36,7 +37,7 @@ This project focuses on:
                     │ (Baseline +   │
                     │      Stats)   │
                     └───────────────┘
-
+```
 ---
 
 ## 🔍 Core Components
