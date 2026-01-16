@@ -218,7 +218,4 @@ Never run traffic generation tools against systems you do not own or control.
 
 ---
 
-## 🙌 Final Note
 
-This project emphasizes **engineering judgment and system design**, not brute-force attack power.
-It reflects how real backend, SRE, and security teams reason about availability and protection.
