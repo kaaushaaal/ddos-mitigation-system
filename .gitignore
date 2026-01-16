@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+.env/
+.env.*
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Node / frontend cache (if added later)
+node_modules/
+
+# Test / temp
+*.tmp
+*.bak
+
+# Video files (optional – keep demo separate)
+*.mp4
+*.mov
