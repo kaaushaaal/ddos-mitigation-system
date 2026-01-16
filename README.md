@@ -19,11 +19,23 @@ This project focuses on:
 ---
 
 ## 🧠 High-Level Architecture
-
-Traffic Generator → FastAPI Application → Detection Engine → Mitigation Layer  
-                                      ↘ Monitoring Dashboard
-
-The monitoring, detection, and mitigation layers are intentionally decoupled to reflect real production systems.
+              ┌────────────────────────┐
+              │   Traffic Generator     │
+              │  (Attack Simulation)    │
+              └───────────┬────────────┘
+                          │
+                          ▼
+┌───────────────┐   ┌───────────────┐   ┌────────────────────┐
+│ Monitoring UI │◄──│  FastAPI App  │──▶│ Rate Limiter       │
+│ (Dashboard)   │   │ (Protected    │   │ (Mitigation Layer) │
+└───────────────┘   │  Service)     │   └────────────────────┘
+                    │       │       │
+                    │       ▼       │
+                    │    Detection  │
+                    │    Engine     │
+                    │ (Baseline +   │
+                    │      Stats)   │
+                    └───────────────┘
 
 ---
 
